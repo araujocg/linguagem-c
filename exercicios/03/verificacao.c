@@ -2,14 +2,14 @@
 #include <stdbool.h>
 #include <string.h>
 
-int main(){
-    char name[100];
-    char approval[10];  // Alterado para armazenar "APROVADO" ou "NEGADO"
+int main()
+{
+    char name[100], assistentQuest[3];
     int numberTicket, age;
-    bool assistent; 
+    bool assistent = false;
 
     printf("Digite o nome do Passageiro... : ");
-    scanf("%s", name);  // Leitura de string
+    scanf("%s", name); // Leitura de string
 
     printf("Digite a idade...: ");
     scanf("%d", &age);
@@ -17,15 +17,14 @@ int main(){
     printf("Digite o número do bilhete...: ");
     scanf("%d", &numberTicket);
 
-    printf("O Passageiro necessita de uma assistência especial (1 para sim, 0 para não): ");
-    int assistentInput;
-    scanf("%d", &assistentInput);  // Leitura como inteiro
-    assistent = assistentInput != 0;  // Conversão para bool
+    printf("O Passageiro necessita de uma assistência especial : ");
+    scanf("%s", &assistentQuest);
 
-    // Atribuição correta usando o operador ternário
-    strcpy(approval, (age > 18 && assistent) ? "APROVADO" : "NEGADO");
+    if (strcmp(assistentQuest, "nao") == 0){
+        assistent = true;
+    }
 
-    printf("O embarque do passageiro está: %s\n", approval);
+    printf("O embarque do passageiro está: %s\n", assistent? "APROVADO" : "NEGADO");
 
     return 0;
 }
