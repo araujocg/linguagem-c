@@ -2,8 +2,7 @@
 #include <stdbool.h>
 #include <string.h>
 
-int main()
-{
+int main() {
     char name[100], assistentQuest[3];
     int numberTicket, age;
     bool assistent = false;
@@ -20,11 +19,12 @@ int main()
     printf("O Passageiro necessita de uma assistência especial : ");
     scanf("%s", &assistentQuest);
 
-    if (strcmp(assistentQuest, "nao") == 0){
+    if (strcmp(assistentQuest, "nao") == 0)
+    {
         assistent = true;
     }
 
-    printf("O embarque do passageiro está: %s\n", assistent? "APROVADO" : "NEGADO");
+    printf("O embarque do passageiro está: %s\n", assistent ? "APROVADO" : "NEGADO");
 
     return 0;
 }
