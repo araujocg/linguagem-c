@@ -31,11 +31,40 @@ int main(){
 
     /*------ strlen --------*/
 
-    char texto[] = "Olha como vc pode ver";
+    // char texto[] = "Olha como vc pode ver";
 
-    size_t comprimento = strlen(texto); // strlen retorna o comprimento da string, que é do tipo size_t.
+    // size_t comprimento = strlen(texto); // strlen retorna o comprimento da string, que é do tipo size_t.
 
-    printf("Comprimento: %zu\n", comprimento); // "comprimento: 21"
+    // printf("Comprimento: %zu\n", comprimento); // "comprimento: 21"
+
+    /*------ strcmp --------*/
+
+    // char str1[] = "apple";
+    // char str2[] = "banana";
+
+    // int resultado = strcmp(str1,str2);
+
+    // if(resultado == 0){
+    //     printf("As string são identicas");
+    // } else if( resultado < 0){
+    //     printf("str1 é menor que a str2");
+    // } else{
+    //     printf("str1 é maior que a str2");
+    // }
+
+    /*------ strchr  --------*/
+
+    char texto[] = "Hello, World!";
+    char *resultado;
+
+    resultado = strchr(texto, 'W');
+
+    if (resultado != NULL) {
+        printf("Caractere encontrado: %c\n", *resultado);
+        printf("Restante da string: %s\n", resultado);
+    } else {
+        printf("Caractere não encontrado.\n");
+    }
 
     return 0;
 }
