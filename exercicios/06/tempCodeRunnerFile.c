@@ -8,15 +8,15 @@ int main(){
 
     for (int i = 0; i < 3; i++){
         for (int j = 0; j < 3; j++){
-            printf("Digite o número a ser colocado na posição matriz[%d][%d]:", i+1, j+1);
             scanf("%d", &matriz[i][j]);
+            printf("passou por aqui \n");
         }
         printf("\n");
     }
 
     for (int i = 0; i < 3; i++){
         for (int j = 0; j < 3; j++){
-            printf("%d ", matriz[i][j]);
+            printf("%d", matriz[i][j]);
         }
         printf("\n");
     }
