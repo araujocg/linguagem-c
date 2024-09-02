@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h> // printf, scanf, etc...
 #include <math.h>
 #include <string.h>
 
