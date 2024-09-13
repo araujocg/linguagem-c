@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-union Aluno{ // Basicamente ele só amarzena um valor por vez independende de qualquer coisa 
+union Aluno{ // he just stores one values at a time
     char nome[50];
     int idade;
 };
