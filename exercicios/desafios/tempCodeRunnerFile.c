@@ -1,0 +1,2 @@
+
+    printf("Digit your number: ");
