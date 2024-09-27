@@ -1,2 +1,1 @@
-
-    printf("Digit your number: ");
+Palindrome
